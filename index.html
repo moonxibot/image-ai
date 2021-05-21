@@ -8,16 +8,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--upload btn-->
-    <input type="file" id="upload" hidden>
-    <button onclick="document.getElementById('upload').click();" class="square">
-        <img src="img/upload.png" alt="업로드"><br>
-        사진 업로드
-    </button>
+    <div id="root">
+        <!--upload btn-->
+        <input type="file" id="upload" hidden>
+        <button onclick="document.getElementById('upload').click();" class="square">
+            <img src="img/upload.png" alt="업로드"><br>
+            사진 업로드
+        </button>
+    </div>
 
+    <!--view-->
     <img id="view" hidden>
 
+    <!--GitHub-->
     <img src="img/github.png" alt="깃허브 로고" id="github" onclick="window.open('https://github.com/moonxibot/image-ai')">
+
+    <!--popup-->
+    <div id="pop" hidden>
+        <div id="popblack"></div>
+        <div id="popal">
+            <p id="popvalue">
+                팝업 내용이 이곳에 표시됩니다.<br>
+                Hello World! 안녕!
+            </p>
+            <button style="margin-top: 1.5vh;" id="popclose" class="button" onclick="popup.close()">확인</button>
+        </div>
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.1"></script> <!--tensorflow-->
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"></script> <!--MobileNET-->
