@@ -1,0 +1,26 @@
+* {
+    font-family: Arial;
+}
+
+button {
+    background-color: #5eb1ff;
+    color: white;
+    font-size: 0.9rem;
+
+    border: none;
+    border-radius: 5px;
+}
+.button {
+    padding: 12px 35px;
+}
+.square {
+    padding: 12px;
+}
+
+#github {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
+    width: 40px;
+}
