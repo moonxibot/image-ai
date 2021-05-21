@@ -17,6 +17,7 @@ upload.addEventListener("change", (e) => {
         //img에 이미지 지정
         const view = document.getElementById("view");
         view.setAttribute("src", reader.result);
+        view.hidden = false;
 
         //mobilenet
         mobilenet.load().then(model => {
